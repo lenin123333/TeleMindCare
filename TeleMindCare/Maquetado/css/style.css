@@ -1,0 +1,345 @@
+header {
+    width: 100%;
+    height: 100%;
+    position: relative; /* Añade posición relativa al elemento padre */
+    background: url("../images/header.jpeg") #3091f8;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Color de fondo negro con opacidad */
+    
+}
+
+
+
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+
+header .menu {
+    width: 100%;
+    text-align: right;
+}
+
+header .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+header .textos{
+    margin-left: 100px;
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    
+}
+
+header .textos .nombre{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+header .textos .nombre span { 
+    font-weight: 300;
+}
+
+header .textos h3{
+    position: relative;
+   
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    
+}
+
+
+
+
+.main .acerca-de .contenedor{
+    overflow: visible;
+    position: relative;
+}
+
+.main .acerca-de .foto{
+    width: 30%;
+    position: absolute;
+    left: 20%;
+    top: -20%;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .acerca-de .foto img{
+    width: 100%;
+    vertical-align: top;
+   
+}
+
+.main .acerca-de article{
+    background: #fff;
+    padding: 40px;
+    width: 40%;
+    position: relative;
+    top: 500px;
+    right: 100px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .acerca-de article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    
+}
+
+.main .acerca-de article p{
+    line-height: 28px;
+    margin-bottom: 15px;
+   
+}
+
+/* Estilo para .swiper-slide */
+.info {
+    width: 220px;
+    height: 300px;
+    margin-right: 20px;
+    transition: transform 0.3s; /* Agrega una transición a la propiedad transform */
+}
+
+/* Estilo para .swiper-slide:hover */
+.info:hover {
+    transform: scale(1.06); /* Aumenta el tamaño del elemento en hover */
+}
+
+.agenda{
+    margin: 10px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 10px #007df4;
+
+}
+
+/* Estilo para .agenda__heading */
+.agenda__heading, .agenda h2 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    color:#3091f8;
+    
+}
+
+/* Estilo para .agenda__descripcion */
+.agenda__descripcion, .agenda p {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Estilo para .eventos */
+.eventos {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para .eventos__heading */
+.eventos__heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para .swiper-container */
+.eventos__listado.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.swiper-slide {
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+/* Estilo para .evento__nombre */
+.evento__nombre {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilo para .evento__introduccion */
+.evento__introduccion {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Estilo para .evento__imagen-autor */
+.evento__imagen-autor {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+/* Estilo para .evento__autor-nombre */
+.evento__autor-nombre {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    color: white;
+}
+
+/* Estilo para .evento__hora */
+.evento__hora {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Estilo para .evento__informacion */
+.evento__informacion {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #007df4;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Estilo para .evento__informacion:hover */
+.evento__informacion:hover {
+    background-color: #005aad;
+}
+
+/* Estilo para .evento__agregar */
+.evento__agregar {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007df4;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los botones del Swiper */
+
+
+/* Deshabilitar el desplazamiento con el scroll en el Swiper */
+.swiper-container {
+    overflow: hidden;
+    width: 90%;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.contacto{
+    margin-top: 50px;
+}
+/* Formulario unete a nosotros*/
+.contacto h3{
+    text-align: center;
+    font-size: 34px;
+    
+}
+.contacto h2 {
+    background-color: #3091f8;
+    color: white;
+    padding: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #007df4;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label,
+.form-group input {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .form-group {
+    width: 48%;
+}
+
+input[type="submit"] {
+    background-color: #007df4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ddd;
+}
+
+/*Estilo del Test*/
+
+footer {
+    background-color: #3091f8; /* Fondo de color gris oscuro */
+    color: #fff; /* Texto en color blanco */
+    padding: 20px 0; /* Espaciado interno superior e inferior */
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 25px;
+}
